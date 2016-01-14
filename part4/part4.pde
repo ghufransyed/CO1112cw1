@@ -16,7 +16,7 @@ void draw()
 
     // section to draw "Before" text
 
-    alternateFont(serifFont,sansFont, 32, "Before...", 0,32);
+    alternateFont(serifFont,serifFont, 32, "Before...", 0,32);
 
 
     // section to draw first pair ("Serif vs Sans")
