@@ -19,7 +19,7 @@ void draw()
     alternateFont(serifFont,sansFont, 32, "Before...", 0,32);
 
 
-    // section to draw first pair
+    // section to draw first pair ("Serif vs Sans")
 
     float firstPairY = 125;
 
@@ -42,9 +42,9 @@ void draw()
     text("Sans", 300,firstPairY);
 
 
-    // section to draw dividing line
+    // section to draw dividing line separating 'Before' and 'After'
+    // parts of the sketch
 
-    
     stroke(255);
     for (int j = 0; j < width; j++)
     {
@@ -56,7 +56,7 @@ void draw()
 
     alternateFont(serifFont,sansFont, 32, "...and After", 0,390);
 
-    // section to draw (first part of) second pair
+    // section to draw (first part of) second pair ("Serif <3 Sans")
 
     float secondPairY = 300;
 
@@ -75,7 +75,7 @@ void draw()
 
     popMatrix();
 
-    // section to draw (second part of) second pair
+    // section to draw (second part of) second pair ("Serif <3 Sans")
 
     textFont(sansFont);
     textSize(36);
@@ -86,6 +86,8 @@ void draw()
     text("Sans", 300,secondPairY);
 }
 
+// used to print word using two different fonts, alternating the font
+// for each letter of the word
 void alternateFont(PFont font1, PFont font2, float size, String wd, float x, float y)
 {
     float offset = 0; // used to ensure each successive
