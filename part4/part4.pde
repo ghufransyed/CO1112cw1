@@ -14,9 +14,13 @@ void draw()
     PFont serifFont = loadFont("Serif-48.vlw");
     PFont sansFont = loadFont("SansSerif-48.vlw");
 
+    PFont serifFont32 = loadFont("Serif-32.vlw");
+    PFont sansFont32 = loadFont("SansSerif-32.vlw");
+
+
     // section to draw "Before" text
 
-    alternateFont(serifFont,serifFont, 32, "Before...", 0,32);
+    alternateFont(serifFont32,serifFont32, 32, "Before...", 0,32);
 
 
     // section to draw first pair ("Serif vs Sans")
@@ -54,7 +58,7 @@ void draw()
 
     // section to draw "...and After" text
 
-    alternateFont(serifFont,sansFont, 32, "...and After", 0,390);
+    alternateFont(serifFont32,sansFont32, 32, "...and After", 0,390);
 
     // section to draw (first part of) second pair ("Serif <3 Sans")
 
